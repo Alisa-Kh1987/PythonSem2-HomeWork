@@ -2,11 +2,11 @@
 # Пример:
 # - пусть N = 4, тогда [ 1, 2, 6, 24 ] (1, 1*2, 1*2*3, 1*2*3*4)
 
-mult_N=1
-list = []
-N=int(input('Введите N: '))
-for i in range(1,N+1):
-    mult_N*=i
-    list.append(mult_N)
+# mult_N=1
+# list = []
+# N=int(input('Введите N: '))
+# for i in range(1,N+1):
+#     mult_N*=i
+#     list.append(mult_N)
 
-print(list)
+# print(list)
