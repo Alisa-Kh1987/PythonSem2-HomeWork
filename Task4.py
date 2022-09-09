@@ -4,12 +4,13 @@
 
 N = int(input('Введите N: '))
 list1 = []
-positions = ['1', '3', '6']
+list2 = []
+positions = ['1', '3', '6', '8']
 
 for i in range(-N, N+1):
     list1.append(i)
-    print(list1)
+print(list1)
 
 with open('file.txt', "w") as file:
-    for  line in positions:
-        file.write(line + '\n')
+    for  string in positions:
+        file.write(string + '\n')
