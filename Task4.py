@@ -5,12 +5,23 @@
 N = int(input('Введите N: '))
 list1 = []
 list2 = []
-positions = ['1', '3', '6', '8']
 
 for i in range(-N, N+1):
     list1.append(i)
 print(list1)
 
 with open('file.txt', "w") as file:
-    for  string in positions:
-        file.write(string + '\n')
+    file.write('1 \n')
+    file.write('3 \n')
+    file.write('6 \n')
+    file.write('7 \n')
+    file.write('9 \n')
+
+positions = 'file.txt'
+file = open(positions, 'r')
+
+mult_pos = 1
+for string in file:
+    pos = int(string)
+    mult_pos *=list1[pos]
+print(mult_pos)
