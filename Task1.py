@@ -2,19 +2,10 @@
 # Пример:
 # - 6782 -> 23
 # - 0,56 -> 11
-# ![text] (name_file.jpg)
 
-# num = input("Введите вещественное число: ")
-# x = num.split(".")
-# a = int(x[0]) # целая часть
-# b = int(x[1]) # дробная часть
-# sum_a = 0
-# sum_b = 0
-# while (a != 0): 
-#     sum_a = sum_a + (a % 10)
-#     a = a // 10
-# while (b != 0):
-#     sum_b = sum_b + (b % 10)
-#     b = b // 10
-# sum = sum_a + sum_b
-# print("Сумма цифр равна:", sum)
+# Num = input('Введите число: ')
+# sum = 0
+# for i in Num:
+#     if i.isdigit():
+#         sum += int(i)
+# print(int(sum))
