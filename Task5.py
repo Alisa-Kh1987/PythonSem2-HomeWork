@@ -15,3 +15,19 @@
 #     j = randint(0, i+1)
 #     list[i], list[j] = list[j], list[i]
 # print('The shuffled list is: ' + str(list))
+
+# решение №2
+
+import random
+
+N = int(input('Введите N: '))
+min = int(input('Введите min: '))
+max = int(input('Введите max: '))
+list = []
+
+for i in range(N):
+    list.append(random.randint(min, max))
+print('The original list is: ' + str(list))
+
+random.shuffle(list)
+print('The shuffled list is: ' + str(list))
